@@ -15,7 +15,6 @@ This dashboard covers basic scripting with `R`. The skills in this course serve 
 
 Instructor: [Gerko Vink](https://www.gerkovink.com) <br>
 
-
 ---
 
 # How to prepare
@@ -25,7 +24,7 @@ Instructor: [Gerko Vink](https://www.gerkovink.com) <br>
 ### Preparing your machine for the course
 Dear all, 
 
-You are preparing yourself for one of my courses. These exercises will help you to master the basic scripting skills required for a succesfull programming career in `R`. 
+Chances are that you aim to prepare yourself for one of my courses. These exercises will help you to master the basic scripting skills required for a succesfull programming career in `R`. 
 
 If you run into trouble, please drop me a line. 
 
