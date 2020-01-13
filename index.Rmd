@@ -24,13 +24,13 @@ Instructor: [Gerko Vink](https://www.gerkovink.com) <br>
 ### Preparing your machine for the course
 Dear all, 
 
-Chances are that you aim to prepare yourself for one of my courses. These exercises will help you to master the basic scripting skills required for a succesfull programming career in `R`. 
+Chances are that you aim to prepare yourself for an `R` course. These exercises will help you to master the basic scripting skills required for a succesfull programming career in `R`. The exercises usually prepare you well for any introductory course into `R`. 
 
 If you run into trouble, please drop me a line. 
 
-I look forward to see you all,  
+All the best,  
 
-*Gerko Vink*
+[*Gerko Vink*](https://www.gerkovink.com)
 
 ### **System requirements**
 
