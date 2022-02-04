@@ -1,6 +1,6 @@
 ---
-title: "prep`R`"
-date: "A crashcourse in basic scripting with `R`" 
+title: "prepR"
+date: "A quick-and-dirty introduction to R" 
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -9,100 +9,124 @@ output:
 
 # Intro {.sidebar}
 
-This dashboard covers basic scripting with `R`. The materials in these exercises serve as an entry level requirement for many of my courses. 
+This tutorial covers basic R usage. 
 
 ---
 
-Instructor: [Gerko Vink](https://www.gerkovink.com) <br>
+<!----------------------------------------------------------------------------->
 
----
-
-# How to prepare
+# Preparation
 
 ## Column 1
 
-### Preparing your machine for the course
-Dear all, 
+###
 
-Chances are that you aim to prepare yourself for an `R` course. These exercises will help you to master the basic scripting skills required for a succesfull programming career in `R`. The exercises usually prepare you well for any introductory course into `R`. 
+Hello, 
 
-If you run into trouble, please drop me a line. 
+You have probably been directed to this page because you are participating in a 
+course that requires R programming. In that course, you will most likely use 
+both R and RStudio. This tutorial comprises three exercises that are intended to 
+guide you through the initial steps of getting up-and-running with R. 
 
-All the best,  
+Before you can do any R programming, however, you will need to install R and 
+RStudio. The steps below will guide you through installing both R and RStudio. 
+Please do so before proceeding on to the exercises. 
 
-[*Gerko Vink*](https://www.gerkovink.com)
+Regards,  
+[Kyle M. Lang](https://www.kylemlang.com)
 
 ### **System requirements**
 
-You will need a laptop or desktop computer with full write access and administrator rights to the machine. We will explore programming and compiling in these exercises. This means that you need full access to your machine. Some corporate laptops (including Dutch university laptops) come with limited access for their users. I therefore advice you to bring a personal laptop computer, if you have one. 
+You will need a computer for which you have full write access and administrator
+rights. We will explore programming and compiling in this tutorial, so you will 
+need full access to your machine. Some corporate computers (and university 
+computers) restrict the access of their users. I therefore advise you to use a 
+personal computer for this course, if possible. 
 
-### **1. Install `R`**
-`R` can be obtained [here](https://cran.r-project.org). We won't use `R` directly in the course, but rather call `R` through `RStudio`. Therefore it needs to be installed. 
+### **1. Install R**
 
-### **2. Install `RStudio` Desktop**
+You can obtain a copy of R [here](https://cran.r-project.org). We won't use 
+R directly in this course. Rather, we'll call R through RStudio. Therefore, 
+you also need to install RStudio. 
 
-Rstudio is an Integrated Development Environment (IDE). It can be obtained as stand-alone software [here](https://www.rstudio.com/products/rstudio/download/#download). The free and open source `RStudio Desktop` version is sufficient.
+### **2. Install RStudio Desktop**
 
-### **3. Start RStudio and install the following packages. **
+RStudio is an Integrated Development Environment (IDE) for R. You can 
+download RStudio as stand-alone software [here](https://www.rstudio.com/products/rstudio/download/#download). 
+You want the free, open-source `RStudio Desktop` version.
 
-Execute the following lines of code in the console window:
+### **3. Start RStudio, and install packages**
 
-```{r eval=FALSE, echo = TRUE}
-install.packages(c("ggplot2", "tidyverse", "magrittr", "micemd", "jomo", "pan", 
-                 "lme4", "knitr", "rmarkdown", "plotly", "ggplot2", "shiny", 
-                 "devtools", "boot", "class", "car", "MASS", "ggplot2movies", 
-                 "ISLR", "DAAG", "mice", "mitml", "miceadds"), 
-                 dependencies = TRUE)
+Open RStudio, and copy-paste the following line of code into the console pane to 
+install the packages you will need for the exercises.
+
+- If nothing happens after you paste the code, try hitting the "Enter/Return" 
+key.
+
+```{r eval = FALSE, echo = TRUE}
+install.packages(c("rmarkdown", "knitr", "dplyr", "mice"), dependencies = TRUE)
 ```
 
-If you are not sure where to execute code, use the following figure to identify the console:
+If you are not sure where to paste the code, use the following figure to 
+identify the console.
+
+- The console pane occupies the left half of the RStudio window shown in this 
+image.
 
 <center>
-  <img src="console.png" alt="HTML5 Icon" width = 70%>
+  <img src="exercises/figures/rstudio1.png" alt="HTML5 Icon" width = 95%>
 </center>
 
-Just copy and paste the installation command and press the return key. When asked 
+If you are asked the following:
 
 ```{r eval = FALSE, echo = TRUE}
 Do you want to install from sources the package which needs 
 compilation? (Yes/no/cancel)
 ```
 
-type `Yes` in the console and press the return key. 
+Type `Yes` in the console, and press the "Enter/Return" key (or click the 
+corresponding button if the question presents as a dialog box). 
 
 ## Column 2
 
 ### **What if the steps to the left do not work for me?**
-If all fails and you have insufficient rights to your machine, the following web-based service will offer a solution. 
 
-1. Open a free account on [rstudio.cloud](https://rstudio.cloud). You can run your own cloud-based `RStudio` environment there. 
+If the suggested steps fail or you have insufficient rights on your machine, you 
+can use the following web-based solutions. 
 
-Naturally, you will need internet access for these services to be accessed. 
+1. Open a free account on [rstudio.cloud](https://rstudio.cloud). 
+   - You can run your own cloud-based RStudio environment there.
+   
+2. If you are a Utrecht University student, you can use Utrecht University's [MyWorkPlace](https://myworkplace.uu.nl/). 
+   - You will have access to R and RStudio there. When you start a new 
+   MyWorkPlace session, you may need to (re)install packages. 
+
+Naturally, you will need internet access to use these services. 
+
+<!----------------------------------------------------------------------------->
 
 # Exercises
 
 ## Column 1
 
-### `R` exercises
-The introductory `R` exercise is threefold. We need to cover a lot of ground in these exercises to get you started with `R`.
+### R Exercises
 
-- Make [Exercise 1](Exercise/Exercise_1_walkthrough.html). This exercise will get you started with `R` and `RStudio`.
-- Make [Exercise 2](Exercise/Exercise_2_walkthrough.html). You can find [boys.RData here](Exercise/boys.RData).
-- Make [Exercise 3](Exercise/Exercise_3_walkthrough.html).
+This tutorial is broken into the following three exercises.
 
-### Exercise discussion
-The below videodiscussions for the practical exercises explain the train of thought in the above exercise documents. 
+- [Exercise 1](exercises/exercise1.html)
+- [Exercise 2](exercises/exercise2.html)
+- [Exercise 3](exercises/exercise3.html)
 
-- [Exercise 1 discussion](https://www.dropbox.com/s/qgxlrrl808klmjq/Exercise1_discussion.mp4?dl=0)
-- [Exercise 2 discussion](https://www.dropbox.com/s/7bxqj6gn7occ0yr/Exercise%202_discussion.mp4?dl=0)
-- [Exercise 3 discussion](https://www.dropbox.com/s/dl5jklj4oixfpxd/Exercise3_discussion.mp4?dl=0)
+### Solutions
 
+Below, you can find suggested solutions for the above exercises. 
 
-### If you have any questions
-Please do not hesitate to [contact me](mailto:G.Vink@uu.nl), if you have questions. 
+- [Exercise 1 Solutions](exercises/exercise1_solutions.html)
+- [Exercise 2 Solutions](exercises/exercise2_solutions.html)
+- [Exercise 3 Solutions](exercises/exercise3_solutions.html)
 
-All the best, 
-
-[Gerko](https://www.gerkovink.com)
-
-
+These solutions are provided so you can check your work and unstick yourself if
+you really can't figure out one of the exercise questions. You should make a 
+concerted effort to complete each exercise yourself before you view these 
+solutions. You won't get much out of this tutorial if you skip right to the 
+answers. 
