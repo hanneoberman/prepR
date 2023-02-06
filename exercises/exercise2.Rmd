@@ -41,7 +41,9 @@ vec2 <- c("A", "B", "C", "D", "E", "F")
 
 ```{asis, echo = params$answers}
 We can use concatenation function, `c()`, to create a vector. A vector is just a 
-series of numbers, letters, or other data elements. 
+series of numbers, letters, or other data elements. An alternative solution is
+`vec1 <- 1:6`
+`vec2 <- LETTERS[1:6]`
 ```
 
 ---
@@ -50,8 +52,8 @@ series of numbers, letters, or other data elements.
 
 **Create two matrices**
 
-1. One from `vec1`
-1. One from `vec2`
+1. One named `mat1` from `vec1`
+1. One named `mat2` from `vec2`
 
 Define both matrices to have 3 rows and 2 columns.
 
@@ -88,7 +90,7 @@ No. `vec1` and `mat1` contain numbers, but `vec2` and `mat2` contain characters.
 
 ## {#matrixQ}
 
-**Make a 6 $\times$ 2 matrix from both `vec1` and `vec2`**
+**Make a 6 $\times$ 2 matrix named `mat3` from both `vec1` and `vec2`**
 
 1. Use `vec1` to populate the first column
 1. Use `vec2` to populate the second column
@@ -268,7 +270,7 @@ from the `str()` function in a beautified format.
 ##
 
 **Let's pretend the first variable (`v1`) in the data frame you created in 
-Question \@ref(dfQ1) is not coded correctly, and it actually represents grouping 
+Question \@ref(dfQ1) (`dat3`) is not coded correctly, and it actually represents grouping 
 information about cities.**
 
 Convert the `v1` variable into a factor with the levels:
