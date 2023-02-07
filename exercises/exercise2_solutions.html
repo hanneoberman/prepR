@@ -1495,15 +1495,17 @@ border-radius: 0px;
 <pre class="r"><code>vec1 &lt;- c(1, 2, 3, 4, 5, 6)
 vec2 &lt;- c(&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;)</code></pre>
 <p>We can use concatenation function, <code>c()</code>, to create a vector. A vector is just a
-series of numbers, letters, or other data elements.</p>
+series of numbers, letters, or other data elements. An alternative solution is
+<code>vec1 &lt;- 1:6</code>
+<code>vec2 &lt;- LETTERS[1:6]</code></p>
 <hr />
 </div>
 <div id="section-1" class="section level2" number="1.2">
 <h2><span class="header-section-number">1.2</span> </h2>
 <p><strong>Create two matrices</strong></p>
 <ol style="list-style-type: decimal">
-<li>One from <code>vec1</code></li>
-<li>One from <code>vec2</code></li>
+<li>One named <code>mat1</code> from <code>vec1</code></li>
+<li>One named <code>mat2</code> from <code>vec2</code></li>
 </ol>
 <p>Define both matrices to have 3 rows and 2 columns.</p>
 <pre class="r"><code>mat1 &lt;- matrix(vec1, nrow = 3, ncol = 2)
@@ -1535,7 +1537,7 @@ we need to specify the dimensions (in this case 3 <span class="math inline">\(\t
 </div>
 <div id="matrixQ" class="section level2" number="1.4">
 <h2><span class="header-section-number">1.4</span> </h2>
-<p><strong>Make a 6 <span class="math inline">\(\times\)</span> 2 matrix from both <code>vec1</code> and <code>vec2</code></strong></p>
+<p><strong>Make a 6 <span class="math inline">\(\times\)</span> 2 matrix named <code>mat3</code> from both <code>vec1</code> and <code>vec2</code></strong></p>
 <ol style="list-style-type: decimal">
 <li>Use <code>vec1</code> to populate the first column</li>
 <li>Use <code>vec2</code> to populate the second column</li>
@@ -1688,7 +1690,7 @@ from the <code>str()</code> function in a beautified format.</p>
 <div id="section-6" class="section level2" number="2.5">
 <h2><span class="header-section-number">2.5</span> </h2>
 <p><strong>Let’s pretend the first variable (<code>v1</code>) in the data frame you created in
-Question <a href="#dfQ1">1.5</a> is not coded correctly, and it actually represents grouping
+Question <a href="#dfQ1">1.5</a> (<code>dat3</code>) is not coded correctly, and it actually represents grouping
 information about cities.</strong></p>
 <p>Convert the <code>v1</code> variable into a factor with the levels:</p>
 <ul>
